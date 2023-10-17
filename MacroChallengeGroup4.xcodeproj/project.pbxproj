@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6051AAF62ADD1CDD00D5755F /* TestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6051AAF52ADD1CDD00D5755F /* TestingView.swift */; };
+		606184B72ADEEB7900CAAC82 /* ConnectingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606184B62ADEEB7900CAAC82 /* ConnectingViewController.swift */; };
 		609CAE622AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609CAE612AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift */; };
 		609CAE642AD7E7BC00BB2A64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609CAE632AD7E7BC00BB2A64 /* ContentView.swift */; };
 		609CAE662AD7E7BD00BB2A64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609CAE652AD7E7BD00BB2A64 /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6051AAF52ADD1CDD00D5755F /* TestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingView.swift; sourceTree = "<group>"; };
+		606184B62ADEEB7900CAAC82 /* ConnectingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingViewController.swift; sourceTree = "<group>"; };
 		609CAE5E2AD7E7BC00BB2A64 /* MacroChallengeGroup4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacroChallengeGroup4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		609CAE612AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroChallengeGroup4App.swift; sourceTree = "<group>"; };
 		609CAE632AD7E7BC00BB2A64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +67,7 @@
 				609CAE632AD7E7BC00BB2A64 /* ContentView.swift */,
 				745E57C72ADFE27000B53351 /* Documentation.md */,
 				6051AAF52ADD1CDD00D5755F /* TestingView.swift */,
+				606184B62ADEEB7900CAAC82 /* ConnectingViewController.swift */,
 				609CAE652AD7E7BD00BB2A64 /* Assets.xcassets */,
 				609CAE672AD7E7BD00BB2A64 /* Preview Content */,
 			);
@@ -175,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				606184B72ADEEB7900CAAC82 /* ConnectingViewController.swift in Sources */,
 				609CAE642AD7E7BC00BB2A64 /* ContentView.swift in Sources */,
 				745E57C32ADFC69400B53351 /* ButtonAnimationModel.swift in Sources */,
 				609CAE622AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift in Sources */,
