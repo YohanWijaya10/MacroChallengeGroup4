@@ -12,6 +12,10 @@ struct MacroChallengeGroup4App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    let landscapeOrientation = UIInterfaceOrientation.landscapeLeft.rawValue
+                    UIDevice.current.setValue(landscapeOrientation, forKey: "orientation")
+                }
         }
     }
 }

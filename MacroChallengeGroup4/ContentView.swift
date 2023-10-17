@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import CoreBluetooth
 
 struct ContentView: View {
+    
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    
     var body: some View {
         ZStack{
             Color.yellow.edgesIgnoringSafeArea(.all)
@@ -19,7 +23,7 @@ struct ContentView: View {
             Circle()
                 .fill(Color.yellow)
                 .frame(width: 945, height: 945)
-                        
+            
             Circle()
                 .fill(Color.white)
                 .frame(width: 750, height: 750)
@@ -52,19 +56,78 @@ struct ContentView: View {
                 .fill(Color.yellow)
                 .frame(width: 145, height: 145)
             
-            VStack{
-                Image(systemName: "waveform.path.ecg")
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                                .foregroundColor(.black
-                                )
+            HStack{
                 
-                Text("Copywrite")
-                                    .foregroundColor(.black)
+                Spacer()
+                Button(action: {
+                    print("left Button tapped")
+                }) {
+                    VStack{
+                        Image("left_hand")
+                            .resizable()
+                            .frame(width: 65, height: 65) //size gambar tangan
+                            .frame(width: 115, height: 115) // size button lingkaran
+                            .foregroundColor(Color.black)
+                            .background(Color.white)
+                            .clipShape(Circle())
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 115)
+                                    .stroke(Color.gray, lineWidth: 5)
+                            )
+                        Text("Left Gloves")
+                            .foregroundColor(.black)
+                        
+                    }
+                    
+                }
+                Spacer()
+                
+                VStack{
+                    Image("Blutooth_Icon")
+                        .resizable()
+                        .frame(width: 65, height: 65)
+                        .foregroundColor(.black
+                        )
+                    
+                    Text("Bluetooth")
+                        .foregroundColor(.black)
+                }
+                
+                Spacer()
+                
+                Button(action: {
+                    print("right Button tapped")
+                }) {
+                    VStack{
+                        Image("right_hand")
+                            .resizable()
+                            .frame(width: 65, height: 65) //size gambar tangan
+                            .frame(width: 115, height: 115) // size button lingkaran
+                            .foregroundColor(Color.black)
+                            .background(Color.white)
+                            .clipShape(Circle())
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 115)
+                                    .stroke(Color.gray, lineWidth: 5)
+                            )
+                        Text("Right Gloves")
+                            .foregroundColor(.black)
+                        
+                    }
+                }
+                
+                Spacer()
+                
             }
         }
     }
+    
+    func button_tapped() {
+        
+    }
+    
 }
+
 #Preview {
     ContentView()
 }
