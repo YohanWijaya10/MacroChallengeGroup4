@@ -13,6 +13,8 @@
 		609CAE642AD7E7BC00BB2A64 /* ConnectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609CAE632AD7E7BC00BB2A64 /* ConnectingView.swift */; };
 		609CAE662AD7E7BD00BB2A64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609CAE652AD7E7BD00BB2A64 /* Assets.xcassets */; };
 		609CAE692AD7E7BD00BB2A64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609CAE682AD7E7BD00BB2A64 /* Preview Assets.xcassets */; };
+		70AF385C2AE051B400FAEC1D /* Snare.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70AF385B2AE051B400FAEC1D /* Snare.mp3 */; };
+		70AF38602AE0589E00FAEC1D /* testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AF385F2AE0589E00FAEC1D /* testing.swift */; };
 		745E57C02ADFC0A800B53351 /* FreePlayMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E57BF2ADFC0A800B53351 /* FreePlayMain.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,8 @@
 		609CAE632AD7E7BC00BB2A64 /* ConnectingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingView.swift; sourceTree = "<group>"; };
 		609CAE652AD7E7BD00BB2A64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		609CAE682AD7E7BD00BB2A64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		70AF385B2AE051B400FAEC1D /* Snare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Snare.mp3; sourceTree = "<group>"; };
+		70AF385F2AE0589E00FAEC1D /* testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testing.swift; sourceTree = "<group>"; };
 		745E57BF2ADFC0A800B53351 /* FreePlayMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreePlayMain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +63,9 @@
 			children = (
 				745E57BE2ADFC07600B53351 /* FreePlayMain */,
 				609CAE612AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift */,
+				70AF385F2AE0589E00FAEC1D /* testing.swift */,
 				609CAE632AD7E7BC00BB2A64 /* ConnectingView.swift */,
+				70AF385B2AE051B400FAEC1D /* Snare.mp3 */,
 				606184B62ADEEB7900CAAC82 /* ConnectingViewController.swift */,
 				609CAE652AD7E7BD00BB2A64 /* Assets.xcassets */,
 				609CAE672AD7E7BD00BB2A64 /* Preview Content */,
@@ -144,6 +150,7 @@
 			files = (
 				609CAE692AD7E7BD00BB2A64 /* Preview Assets.xcassets in Resources */,
 				609CAE662AD7E7BD00BB2A64 /* Assets.xcassets in Resources */,
+				70AF385C2AE051B400FAEC1D /* Snare.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +163,7 @@
 			files = (
 				606184B72ADEEB7900CAAC82 /* ConnectingViewController.swift in Sources */,
 				609CAE642AD7E7BC00BB2A64 /* ConnectingView.swift in Sources */,
+				70AF38602AE0589E00FAEC1D /* testing.swift in Sources */,
 				603508F32ADFF0A0002EA1A3 /* ButtonAnimationModel.swift in Sources */,
 				609CAE622AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift in Sources */,
 				745E57C02ADFC0A800B53351 /* FreePlayMain.swift in Sources */,
@@ -292,9 +300,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MacroChallengeGroup4/Preview Content\"";
-				DEVELOPMENT_TEAM = ZF4QX38RB3;
+				DEVELOPMENT_TEAM = 22JP9U997Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "$(PRODUCT_NAME)";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "harus connect";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -322,9 +332,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MacroChallengeGroup4/Preview Content\"";
-				DEVELOPMENT_TEAM = ZF4QX38RB3;
+				DEVELOPMENT_TEAM = 22JP9U997Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "$(PRODUCT_NAME)";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "harus connect";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
