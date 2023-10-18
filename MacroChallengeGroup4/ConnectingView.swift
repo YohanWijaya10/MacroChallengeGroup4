@@ -17,6 +17,9 @@ struct ConnectingView: View {
     @State private var isFlashing_left = true
     @State private var isFlashing_right = true
     
+    @State private var isLeftConnected = false
+    @State private var isRightConnected = false
+    
     @State private var isFreeplayView = false
     
     var body: some View {
@@ -71,9 +74,17 @@ struct ConnectingView: View {
                 Spacer()
                 if !isButtonHidden{
                     Button(action: {
-                        print("left Button tapped")
-                        buttonoutlineColor_left = Color.green
-                        isFlashing_left.toggle()
+                        isLeftConnected = true
+                        if isLeftConnected{
+                            print("left Button Connected")
+                            buttonoutlineColor_left = Color.green
+                            isFlashing_left.toggle()
+                        }
+                        else{
+                            print("left Button DisConnected")
+                            buttonoutlineColor_left = Color.red
+                            isFlashing_left.toggle()
+                        }
                     }) {
                         ZStack{
                             VStack{
@@ -122,9 +133,17 @@ struct ConnectingView: View {
                 
                 if !isButtonHidden{
                     Button(action: {
-                        print("right Button tapped")
-                        buttonoutlineColor_right = Color.green
-                        isFlashing_right.toggle()
+                        isRightConnected = true
+                        if isRightConnected{
+                            print("right Button Connected")
+                            buttonoutlineColor_right = Color.green
+                            isFlashing_right.toggle()
+                        }
+                        else{
+                            print("right Button DisConnected")
+                            buttonoutlineColor_right = Color.red
+                            isFlashing_right.toggle()
+                        }
                     }) {
                         VStack{
                             Image("right_hand")
@@ -161,26 +180,30 @@ struct ConnectingView: View {
                     Spacer()
                     Spacer()
                 }
-                Button(action: {
-                    print("Done Button tapped")
-                    isFreeplayView = true
-                }) {
-                    Text("Done")
-                        .font(.title)
-                        .foregroundColor(.black)
-                        .padding()
-                        .frame(width: 200, height: 40)
-                        .background(Color(UIColor(red: 0.9647, green: 0.9059, blue: 0.7647, alpha: 1.0)))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.black, lineWidth: 3)
-                        )
-                        .cornerRadius(10)
-                } // button next buat ke halaman selanjutnya setelah connect
-                .padding()
-                .sheet(isPresented: $isFreeplayView, content: {
-                    FreePlayMain()
-                })
+                
+                if isLeftConnected && isRightConnected {
+                    Button(action: {
+                        print("Done Button tapped")
+                        isFreeplayView = true
+                    }) {
+                        Text("Done")
+                            .font(.title)
+                            .foregroundColor(.black)
+                            .padding()
+                            .frame(width: 200, height: 40)
+                            .background(Color(UIColor(red: 0.9647, green: 0.9059, blue: 0.7647, alpha: 1.0)))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.black, lineWidth: 3)
+                            )
+                            .cornerRadius(10)
+                    } // button next buat ke halaman selanjutnya setelah connect
+                    .padding()
+                    .sheet(isPresented: $isFreeplayView, content: {
+                                    FreePlayMain()
+                                })
+                    
+                }
                 
                 Spacer()
             }
