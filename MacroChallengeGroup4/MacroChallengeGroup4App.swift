@@ -6,16 +6,16 @@
 //
 
 import SwiftUI
+import CoreBluetooth
+
 
 @main
-struct MacroChallengeGroup4App: App {
+struct Macro_coba1App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .onAppear {
+            ContentView().onAppear {
                     let landscapeOrientation = UIInterfaceOrientation.landscapeLeft.rawValue
-                    UIDevice.current.setValue(landscapeOrientation, forKey: "orientation") //ini kemana ya kok ilang
-                }
+                    UIDevice.current.setValue(landscapeOrientation, forKey: "orientation")
         }
     }
 }

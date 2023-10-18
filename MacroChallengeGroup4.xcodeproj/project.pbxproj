@@ -12,6 +12,7 @@
 		609CAE642AD7E7BC00BB2A64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609CAE632AD7E7BC00BB2A64 /* ContentView.swift */; };
 		609CAE662AD7E7BD00BB2A64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609CAE652AD7E7BD00BB2A64 /* Assets.xcassets */; };
 		609CAE692AD7E7BD00BB2A64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609CAE682AD7E7BD00BB2A64 /* Preview Assets.xcassets */; };
+		745E57C02ADFC0A800B53351 /* FreePlayMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E57BF2ADFC0A800B53351 /* FreePlayMain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		609CAE632AD7E7BC00BB2A64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		609CAE652AD7E7BD00BB2A64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		609CAE682AD7E7BD00BB2A64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		745E57BF2ADFC0A800B53351 /* FreePlayMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreePlayMain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		609CAE602AD7E7BC00BB2A64 /* MacroChallengeGroup4 */ = {
 			isa = PBXGroup;
 			children = (
+				745E57BE2ADFC07600B53351 /* FreePlayMain */,
 				609CAE612AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift */,
 				609CAE632AD7E7BC00BB2A64 /* ContentView.swift */,
 				606184B62ADEEB7900CAAC82 /* ConnectingViewController.swift */,
@@ -68,6 +71,14 @@
 				609CAE682AD7E7BD00BB2A64 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		745E57BE2ADFC07600B53351 /* FreePlayMain */ = {
+			isa = PBXGroup;
+			children = (
+				745E57BF2ADFC0A800B53351 /* FreePlayMain.swift */,
+			);
+			path = FreePlayMain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +154,7 @@
 				606184B72ADEEB7900CAAC82 /* ConnectingViewController.swift in Sources */,
 				609CAE642AD7E7BC00BB2A64 /* ContentView.swift in Sources */,
 				609CAE622AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift in Sources */,
+				745E57C02ADFC0A800B53351 /* FreePlayMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
