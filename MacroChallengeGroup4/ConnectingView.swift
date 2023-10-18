@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreBluetooth
 
-struct ContentView: View {
+struct ConnectingView: View {
     
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @State private var isButtonHidden = false
@@ -189,5 +189,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ConnectingView()
 }
