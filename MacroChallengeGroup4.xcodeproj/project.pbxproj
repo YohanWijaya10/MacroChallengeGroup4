@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		603508F32ADFF0A0002EA1A3 /* ButtonAnimationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603508F22ADFF0A0002EA1A3 /* ButtonAnimationModel.swift */; };
 		606184B72ADEEB7900CAAC82 /* ConnectingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606184B62ADEEB7900CAAC82 /* ConnectingViewController.swift */; };
 		609CAE622AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609CAE612AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift */; };
 		609CAE642AD7E7BC00BB2A64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609CAE632AD7E7BC00BB2A64 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		603508F22ADFF0A0002EA1A3 /* ButtonAnimationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimationModel.swift; sourceTree = "<group>"; };
 		606184B62ADEEB7900CAAC82 /* ConnectingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingViewController.swift; sourceTree = "<group>"; };
 		609CAE5E2AD7E7BC00BB2A64 /* MacroChallengeGroup4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacroChallengeGroup4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		609CAE612AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroChallengeGroup4App.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				745E57BF2ADFC0A800B53351 /* FreePlayMain.swift */,
+				603508F22ADFF0A0002EA1A3 /* ButtonAnimationModel.swift */,
 			);
 			path = FreePlayMain;
 			sourceTree = "<group>";
