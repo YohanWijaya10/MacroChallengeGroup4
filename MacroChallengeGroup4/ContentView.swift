@@ -17,6 +17,8 @@ struct ContentView: View {
     @State private var isFlashing_left = true
     @State private var isFlashing_right = true
     
+    @State private var isFreeplayView = false
+    
     var body: some View {
         ZStack{
             Color.yellow.edgesIgnoringSafeArea(.all)
@@ -161,6 +163,7 @@ struct ContentView: View {
                 }
                 Button(action: {
                     print("Done Button tapped")
+                    isFreeplayView = true
                 }) {
                     Text("Done")
                         .font(.title)
@@ -175,6 +178,9 @@ struct ContentView: View {
                         .cornerRadius(10)
                 } // button next buat ke halaman selanjutnya setelah connect
                 .padding()
+                .sheet(isPresented: $isFreeplayView, content: {
+                    //FreePlayMain()
+                })
                 
                 Spacer()
             }
