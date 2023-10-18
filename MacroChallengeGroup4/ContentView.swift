@@ -179,7 +179,7 @@ struct ContentView: View {
                 } // button next buat ke halaman selanjutnya setelah connect
                 .padding()
                 .sheet(isPresented: $isFreeplayView, content: {
-                    //FreePlayMain()
+                    FreePlayMain()
                 })
                 
                 Spacer()
