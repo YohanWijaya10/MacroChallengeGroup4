@@ -11,9 +11,9 @@ Animation is one part of this project that is used to animate several object, su
 ### What is DispatchQueue.main.asyncAfter(deadline: .now() + 2.0)?
 - DispatchQueue.main.asyncAfter(deadline: .now() + 2.0)
     is used to schedule a block of code to be executed after a specified delay. Let's break down this line:
-        - **DispatchQueue.main**: 
+        + **DispatchQueue.main**: 
             This specifies the dispatch queue on which the code should be executed. In this case, it's the main dispatch queue, which is the queue responsible for running tasks related to the user interface in a SwiftUI application.
-        - **asyncAfter(deadline: .now() + 2.0)**: 
+        + **asyncAfter(deadline: .now() + 2.0)**: 
             This part schedules the code to be executed after a specified time interval. There are two parts we     could break down from this line:
                 + **.now()**: This represents the current point in time.
                 + **2.0**: It adds a time interval of 2.0 seconds to the current time. In other words, it schedules the code to run 2 seconds from the current time.
