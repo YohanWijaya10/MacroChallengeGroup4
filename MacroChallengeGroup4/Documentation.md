@@ -3,12 +3,12 @@
 What is documentation?
 Documentation is the part of this project, which created by Wantonius to made him remember things of which to explain and which more to be detailed etc. This documentation will updated at every -push that is labelled as UPDATE. Anyway, if you're the part of the developer, feel free to share your findings here or your thoughts of the project. Thank you, and have a nice day **:)**
 
-# Documentation Logbook #1 - Graphics
+## Documentation Logbook #1 - Graphics
 
-# Documentation Logbook #2 - Animation
+## Documentation Logbook #2 - Animation
 Animation is one part of this project that is used to animate several object, such as the bass effect of the cajoon and the animation of device searching. In this part of documentation, I would like to place several notes so I didn't forget it and I could easily arrange my word to represent it to user.
 
-**What is DispatchQueue.main.asyncAfter(deadline: .now() + 2.0)?**
+###What is DispatchQueue.main.asyncAfter(deadline: .now() + 2.0)?###
 - DispatchQueue.main.asyncAfter(deadline: .now() + 2.0)
     is used to schedule a block of code to be executed after a specified delay. Let's break down this line:
         - **DispatchQueue.main**: 
