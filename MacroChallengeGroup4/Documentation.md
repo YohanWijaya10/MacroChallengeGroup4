@@ -8,7 +8,7 @@ Documentation is the part of this project, which created by Wantonius to made hi
 ## Documentation Logbook #2 - Animation
 Animation is one part of this project that is used to animate several object, such as the bass effect of the cajoon and the animation of device searching. In this part of documentation, I would like to place several notes so I didn't forget it and I could easily arrange my word to represent it to user.
 
-###What is DispatchQueue.main.asyncAfter(deadline: .now() + 2.0)?###
+### What is DispatchQueue.main.asyncAfter(deadline: .now() + 2.0)?
 - DispatchQueue.main.asyncAfter(deadline: .now() + 2.0)
     is used to schedule a block of code to be executed after a specified delay. Let's break down this line:
         - **DispatchQueue.main**: 
@@ -18,7 +18,7 @@ Animation is one part of this project that is used to animate several object, su
                 + **.now()**: This represents the current point in time.
                 + **2.0**: It adds a time interval of 2.0 seconds to the current time. In other words, it schedules the code to run 2 seconds from the current time.
 
-**What is .alignmentGuide(HorizontalAlignment.center) { a in a[.leading] + (a[.trailing] - a[.leading]) / 2}**
+### What is .alignmentGuide(HorizontalAlignment.center) { a in a[.leading] + (a[.trailing] - a[.leading]) / 2}
 - .alignmentGuide(HorizontalAlignment.center) { a in a[.leading] + (a[.trailing] - a[.leading]) / 2} 
     is used to specify how to align a view within its parent view along the horizontal axis. It's particularly useful for tuning the layout of subviews within a container (like rectangle inside a rectangle or VStacks inside HStacks or even ZStacks). Let's break it down this line:
         - **.alignmentGuide(HorizontalAlignment.center)**: 
@@ -28,7 +28,7 @@ Animation is one part of this project that is used to animate several object, su
         - **a[.leading] + (a[.trailing] - a[.leading]) / 2**:
             This part represents the position of the leading edge (left side) and the trailing edge (right side) of the view. Then it also calculates the midpoint between the leading and trailing edges. This effectively centers the view horizontally within its parent. I took it from Stackoverflow to make sure the middle position in the view :3
 
-**What's the purpose of ButtonAnimationModel(isShowingCircle: $isShowingRightKickCircle)?**
+### What's the purpose of ButtonAnimationModel(isShowingCircle: $isShowingRightKickCircle)?
 - Well, it is a simple question but sometimes I forgot how to do so... **ButtonAnimationModel(isShowingCircle: $isShowingRightKickCircle)** is used to call the function called *isShowingCircle* from **ButtonAnimationModel** to any page you want, in this simple project I added it into **FreePlayMain**.
 - **If I want to use it into the other page, what should I do?** 
     First you can call the function you want into a 'state', which the line is:
