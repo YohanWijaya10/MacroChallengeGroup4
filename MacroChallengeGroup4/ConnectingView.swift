@@ -20,7 +20,7 @@ struct ConnectingView: View {
     @State private var isLeftConnected = false
     @State private var isRightConnected = false
     
-    @State private var isFreeplayView = false
+    @State private var isMainPageView = false
     
     var body: some View {
         ZStack{
@@ -184,7 +184,7 @@ struct ConnectingView: View {
                 if isLeftConnected && isRightConnected {
                     Button(action: {
                         print("Done Button tapped")
-                        isFreeplayView = true
+                        isMainPageView = true
                     }) {
                         Text("Done")
                             .font(.title)
@@ -199,8 +199,8 @@ struct ConnectingView: View {
                             .cornerRadius(10)
                     } // button next buat ke halaman selanjutnya setelah connect
                     .padding()
-                    .sheet(isPresented: $isFreeplayView, content: {
-                                    FreePlayMain()
+                    .sheet(isPresented: $isMainPageView, content: {
+                                    MainPageView()
                                 })
                     
                 }
