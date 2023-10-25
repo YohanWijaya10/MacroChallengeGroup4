@@ -14,6 +14,7 @@
 		609CAE692AD7E7BD00BB2A64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609CAE682AD7E7BD00BB2A64 /* Preview Assets.xcassets */; };
 		60CD54292AE687D700439E2D /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD54282AE687D700439E2D /* MainPageView.swift */; };
 		745E57C02ADFC0A800B53351 /* FreePlayMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E57BF2ADFC0A800B53351 /* FreePlayMain.swift */; };
+		747B08302AE8FA8200595EF8 /* ButtonAnimationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E57C22ADFC69400B53351 /* ButtonAnimationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -178,6 +179,7 @@
 				60CD54292AE687D700439E2D /* MainPageView.swift in Sources */,
 				609CAE622AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift in Sources */,
 				745E57C02ADFC0A800B53351 /* FreePlayMain.swift in Sources */,
+				747B08302AE8FA8200595EF8 /* ButtonAnimationModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
