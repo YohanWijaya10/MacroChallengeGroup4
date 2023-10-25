@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		603508F32ADFF0A0002EA1A3 /* ButtonAnimationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603508F22ADFF0A0002EA1A3 /* ButtonAnimationModel.swift */; };
 		606184B72ADEEB7900CAAC82 /* ConnectingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606184B62ADEEB7900CAAC82 /* ConnectingViewController.swift */; };
 		609CAE622AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609CAE612AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift */; };
 		609CAE642AD7E7BC00BB2A64 /* ConnectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609CAE632AD7E7BC00BB2A64 /* ConnectingView.swift */; };
@@ -15,12 +14,10 @@
 		609CAE692AD7E7BD00BB2A64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609CAE682AD7E7BD00BB2A64 /* Preview Assets.xcassets */; };
 		60CD54292AE687D700439E2D /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD54282AE687D700439E2D /* MainPageView.swift */; };
 		745E57C02ADFC0A800B53351 /* FreePlayMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E57BF2ADFC0A800B53351 /* FreePlayMain.swift */; };
-		745E57C32ADFC69400B53351 /* ButtonAnimationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E57C22ADFC69400B53351 /* ButtonAnimationModel.swift */; };
-		745E57C62ADFC8F000B53351 /* CircleDropletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E57C52ADFC8F000B53351 /* CircleDropletViewModel.swift */; };
+		74BF29C52AE7B48B00E318CD /* ButtonAnimationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E57C22ADFC69400B53351 /* ButtonAnimationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		603508F22ADFF0A0002EA1A3 /* ButtonAnimationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimationModel.swift; sourceTree = "<group>"; };
 		606184B62ADEEB7900CAAC82 /* ConnectingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingViewController.swift; sourceTree = "<group>"; };
 		609CAE5E2AD7E7BC00BB2A64 /* MacroChallengeGroup4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacroChallengeGroup4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		609CAE612AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroChallengeGroup4App.swift; sourceTree = "<group>"; };
@@ -30,8 +27,6 @@
 		60CD54282AE687D700439E2D /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
 		745E57BF2ADFC0A800B53351 /* FreePlayMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreePlayMain.swift; sourceTree = "<group>"; };
 		745E57C22ADFC69400B53351 /* ButtonAnimationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimationModel.swift; sourceTree = "<group>"; };
-		745E57C52ADFC8F000B53351 /* CircleDropletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleDropletViewModel.swift; sourceTree = "<group>"; };
-		745E57C72ADFE27000B53351 /* Documentation.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Documentation.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +61,7 @@
 			children = (
 				745E57C42ADFC8AE00B53351 /* New Group */,
 				745E57C12ADFC67F00B53351 /* Model */,
-				745E57BE2ADFC07600B53351 /* FreePlayMain */,
+				74BF29C62AE7B9C500E318CD /* View */,
 				609CAE612AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift */,
 				609CAE632AD7E7BC00BB2A64 /* ContentView.swift */,
 				745E57C72ADFE27000B53351 /* Documentation.md */,
@@ -88,20 +83,11 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		745E57BE2ADFC07600B53351 /* FreePlayMain */ = {
-			isa = PBXGroup;
-			children = (
-				745E57BF2ADFC0A800B53351 /* FreePlayMain.swift */,
-				603508F22ADFF0A0002EA1A3 /* ButtonAnimationModel.swift */,
-			);
-			path = FreePlayMain;
-			sourceTree = "<group>";
-		};
 		745E57C12ADFC67F00B53351 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				606184B62ADEEB7900CAAC82 /* ConnectingViewController.swift */,
 				745E57C22ADFC69400B53351 /* ButtonAnimationModel.swift */,
-				745E57C52ADFC8F000B53351 /* CircleDropletViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,6 +97,16 @@
 			children = (
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		74BF29C62AE7B9C500E318CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				609CAE632AD7E7BC00BB2A64 /* ConnectingView.swift */,
+				60CD54282AE687D700439E2D /* MainPageView.swift */,
+				745E57BF2ADFC0A800B53351 /* FreePlayMain.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -9,16 +9,13 @@ import Foundation
 import SwiftUI
 
 struct MainPageView: View{
-    var NamaUser: String = "Nadine"
+    var NamaUser: String = "Osama Blink Dagger"
     @State private var Freeplay_isPressed = false
     @State private var Songs_isPressed = false
     @State private var Courses_isPressed = false
     
     var body: some View{
         ZStack{
-            Color(#colorLiteral(red: 1, green: 0.9764705882, blue: 0.8784313725, alpha: 1))
-                .edgesIgnoringSafeArea(.all)
-            
             ZStack{
                 VStack{
                     HStack {
@@ -109,7 +106,6 @@ struct MainPageView: View{
             }
             
             Spacer()
-                .padding()
         }
     }
 }
