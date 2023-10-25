@@ -14,7 +14,6 @@
 		609CAE692AD7E7BD00BB2A64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609CAE682AD7E7BD00BB2A64 /* Preview Assets.xcassets */; };
 		60CD54292AE687D700439E2D /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD54282AE687D700439E2D /* MainPageView.swift */; };
 		745E57C02ADFC0A800B53351 /* FreePlayMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E57BF2ADFC0A800B53351 /* FreePlayMain.swift */; };
-		74BF29C52AE7B48B00E318CD /* ButtonAnimationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E57C22ADFC69400B53351 /* ButtonAnimationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,12 +62,6 @@
 				745E57C12ADFC67F00B53351 /* Model */,
 				74BF29C62AE7B9C500E318CD /* View */,
 				609CAE612AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift */,
-				609CAE632AD7E7BC00BB2A64 /* ContentView.swift */,
-				745E57C72ADFE27000B53351 /* Documentation.md */,
-				6051AAF52ADD1CDD00D5755F /* TestingView.swift */,
-				609CAE632AD7E7BC00BB2A64 /* ConnectingView.swift */,
-				606184B62ADEEB7900CAAC82 /* ConnectingViewController.swift */,
-				60CD54282AE687D700439E2D /* MainPageView.swift */,
 				609CAE652AD7E7BD00BB2A64 /* Assets.xcassets */,
 				609CAE672AD7E7BD00BB2A64 /* Preview Content */,
 			);
@@ -86,8 +79,8 @@
 		745E57C12ADFC67F00B53351 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				606184B62ADEEB7900CAAC82 /* ConnectingViewController.swift */,
 				745E57C22ADFC69400B53351 /* ButtonAnimationModel.swift */,
+				606184B62ADEEB7900CAAC82 /* ConnectingViewController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,14 +173,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				606184B72ADEEB7900CAAC82 /* ConnectingViewController.swift in Sources */,
-				609CAE642AD7E7BC00BB2A64 /* ContentView.swift in Sources */,
-				745E57C32ADFC69400B53351 /* ButtonAnimationModel.swift in Sources */,
+				609CAE642AD7E7BC00BB2A64 /* ConnectingView.swift in Sources */,
 				609CAE642AD7E7BC00BB2A64 /* ConnectingView.swift in Sources */,
 				60CD54292AE687D700439E2D /* MainPageView.swift in Sources */,
 				609CAE622AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift in Sources */,
 				745E57C02ADFC0A800B53351 /* FreePlayMain.swift in Sources */,
-				745E57C62ADFC8F000B53351 /* CircleDropletViewModel.swift in Sources */,
-				6051AAF62ADD1CDD00D5755F /* TestingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
