@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6040543E2AEF90B400B6F564 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6040543D2AEF90B400B6F564 /* RoundedCorner.swift */; };
 		606184B72ADEEB7900CAAC82 /* ConnectingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606184B62ADEEB7900CAAC82 /* ConnectingViewController.swift */; };
 		609CAE622AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609CAE612AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift */; };
 		609CAE642AD7E7BC00BB2A64 /* ConnectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609CAE632AD7E7BC00BB2A64 /* ConnectingView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6040543D2AEF90B400B6F564 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		606184B62ADEEB7900CAAC82 /* ConnectingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingViewController.swift; sourceTree = "<group>"; };
 		609CAE5E2AD7E7BC00BB2A64 /* MacroChallengeGroup4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacroChallengeGroup4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		609CAE612AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroChallengeGroup4App.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			children = (
 				745E57C22ADFC69400B53351 /* ButtonAnimationModel.swift */,
 				606184B62ADEEB7900CAAC82 /* ConnectingViewController.swift */,
+				6040543D2AEF90B400B6F564 /* RoundedCorner.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6040543E2AEF90B400B6F564 /* RoundedCorner.swift in Sources */,
 				606184B72ADEEB7900CAAC82 /* ConnectingViewController.swift in Sources */,
 				609CAE642AD7E7BC00BB2A64 /* ConnectingView.swift in Sources */,
 				609CAE642AD7E7BC00BB2A64 /* ConnectingView.swift in Sources */,
