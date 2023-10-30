@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6040543E2AEF90B400B6F564 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6040543D2AEF90B400B6F564 /* RoundedCorner.swift */; };
+		604054402AEF91DB00B6F564 /* SongListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6040543F2AEF91DB00B6F564 /* SongListView.swift */; };
 		606184B72ADEEB7900CAAC82 /* ConnectingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606184B62ADEEB7900CAAC82 /* ConnectingViewController.swift */; };
 		609CAE622AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609CAE612AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift */; };
 		609CAE642AD7E7BC00BB2A64 /* ConnectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609CAE632AD7E7BC00BB2A64 /* ConnectingView.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		6040543D2AEF90B400B6F564 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		6040543F2AEF91DB00B6F564 /* SongListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListView.swift; sourceTree = "<group>"; };
 		606184B62ADEEB7900CAAC82 /* ConnectingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingViewController.swift; sourceTree = "<group>"; };
 		609CAE5E2AD7E7BC00BB2A64 /* MacroChallengeGroup4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacroChallengeGroup4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		609CAE612AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroChallengeGroup4App.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				609CAE632AD7E7BC00BB2A64 /* ConnectingView.swift */,
 				60CD54282AE687D700439E2D /* MainPageView.swift */,
 				745E57BF2ADFC0A800B53351 /* FreePlayMain.swift */,
+				6040543F2AEF91DB00B6F564 /* SongListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				60CD54292AE687D700439E2D /* MainPageView.swift in Sources */,
 				609CAE622AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift in Sources */,
 				745E57C02ADFC0A800B53351 /* FreePlayMain.swift in Sources */,
+				604054402AEF91DB00B6F564 /* SongListView.swift in Sources */,
 				747B08302AE8FA8200595EF8 /* ButtonAnimationModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
