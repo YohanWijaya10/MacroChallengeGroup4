@@ -69,3 +69,5 @@ fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
 *.xcuserstate
+*.xcuserstate
+MacroChallengeGroup4.xcodeproj/project.xcworkspace/xcuserdata/wantoniusd.silverfangs.xcuserdatad/UserInterfaceState.xcuserstate
