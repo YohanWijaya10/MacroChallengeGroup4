@@ -305,6 +305,8 @@ struct ConnectingView: View {
     
     @State private var isFreeplayView = false
     
+    @State private var isMainPageView = false
+    
     
     // Properti AVAudioPlayer
     @State private var audioPlayer1: AVAudioPlayer?
@@ -475,26 +477,30 @@ struct ConnectingView: View {
             }
             
             if isLeftConnected && isRightConnected {
-                Button(action: {
-                    print("Done Button tapped")
-                    isMainPageView = true
-                }) {
-                    Text("Done")
-                        .font(.title)
-                        .foregroundColor(.black)
-                        .padding()
-                        .frame(width: 200, height: 40)
-                        .background(Color(UIColor(red: 0.9647, green: 0.9059, blue: 0.7647, alpha: 1.0)))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.black, lineWidth: 3)
-                        )
-                        .cornerRadius(10)
-                } // button next buat ke halaman selanjutnya setelah connect
-                .padding()
-                .sheet(isPresented: $isMainPageView, content: {
-                    MainPageView(NamaUser: "")
-                })
+                VStack {
+                    Spacer().frame(maxHeight:250)
+                    Button(action: {
+                        print("Done Button tapped")
+                        isMainPageView = true
+                    }) {
+                        Text("Done")
+                            .font(.title)
+                            .foregroundColor(.black)
+                            .padding()
+                            .frame(width: 200, height: 40)
+                            .background(Color(UIColor(red: 0.9647, green: 0.9059, blue: 0.7647, alpha: 1.0)))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.black, lineWidth: 3)
+                            )
+                            .cornerRadius(10)
+                    } // button next buat ke halaman selanjutnya setelah connect
+                    .padding()
+                    .sheet(isPresented: $isMainPageView, content: {
+                        MainPageView(NamaUser: "")
+                    })
+
+                }
                 
             }
             
