@@ -52,7 +52,7 @@ struct CoursesView: View {
                                 .fill(Color("Papyrus"))
                                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                             
-                            Image("RhinoHi")
+                            Image("Rhino Welcome")
                                 .padding(.trailing, 580)
                                 .padding(.top, 110)
                             
@@ -72,11 +72,11 @@ struct CoursesView: View {
                                                     ZStack{
                                                         Circle()
                                                         
-                                                        Image("Icon Course")
+                                                        Image("Dummy Icon")
                                                             .resizable()
                                                             .scaledToFit()
                                                         
-                                                        Image("Frame Course Map")
+                                                        Image("Courses Icon Frame")
                                                             .resizable()
                                                             .scaledToFit()
                                                         
@@ -96,11 +96,11 @@ struct CoursesView: View {
                                                     ZStack{
                                                         Circle()
                                                         
-                                                        Image("Icon Course")
+                                                        Image("Dummy Icon")
                                                             .resizable()
                                                             .scaledToFit()
                                                         
-                                                        Image("Frame Course Map")
+                                                        Image("Courses Icon Frame")
                                                             .resizable()
                                                             .scaledToFit()
                                                         
@@ -120,11 +120,11 @@ struct CoursesView: View {
                                                     ZStack{
                                                         Circle()
                                                         
-                                                        Image("Icon Course")
+                                                        Image("Dummy Icon")
                                                             .resizable()
                                                             .scaledToFit()
                                                         
-                                                        Image("Frame Course Map")
+                                                        Image("Courses Icon Frame")
                                                             .resizable()
                                                             .scaledToFit()
                                                         
@@ -149,11 +149,11 @@ struct CoursesView: View {
                                                     ZStack{
                                                         Circle()
                                                         
-                                                        Image("Icon Course")
+                                                        Image("Dummy Icon")
                                                             .resizable()
                                                             .scaledToFit()
                                                         
-                                                        Image("Frame Course Map")
+                                                        Image("Courses Icon Frame")
                                                             .resizable()
                                                             .scaledToFit()
                                                         
@@ -173,11 +173,11 @@ struct CoursesView: View {
                                                     ZStack{
                                                         Circle()
                                                         
-                                                        Image("Icon Course")
+                                                        Image("Dummy Icon")
                                                             .resizable()
                                                             .scaledToFit()
                                                         
-                                                        Image("Frame Course Map")
+                                                        Image("Courses Icon Frame")
                                                             .resizable()
                                                             .scaledToFit()
                                                         
@@ -197,15 +197,15 @@ struct CoursesView: View {
                                                     ZStack{
                                                         Circle()
                                                         
-                                                        Image("Icon Course")
+                                                        Image("Dummy Icon")
                                                             .resizable()
                                                             .scaledToFit()
                                                         
-                                                        Image("Frame Course Map")
+                                                        Image("Courses Icon Frame")
                                                             .resizable()
                                                             .scaledToFit()
                                                         
-                                                        Text("Pattern 5")
+                                                        Text("Pattern 6")
                                                             .font(.system(size: 20))
                                                             .bold()
                                                             .padding(.top, 65)

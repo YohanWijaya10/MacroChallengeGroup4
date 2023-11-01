@@ -70,7 +70,7 @@ struct MainPageView: View{
                     HStack{
                         NavigationLink(destination: CoursesView().navigationBarHidden(true)) {
                             ZStack{
-                                Image("CoursesButton")
+                                Image("Courses Button")
                                     .resizable()
                                     .scaledToFit()
                                 
@@ -91,7 +91,7 @@ struct MainPageView: View{
                         
                         NavigationLink(destination: SongListView().navigationBarHidden(true)) {
                             ZStack{
-                            Image("SongsButton")
+                            Image("Songs Button")
                             .resizable()
                             .scaledToFit()
                             
@@ -112,7 +112,7 @@ struct MainPageView: View{
                         
                         NavigationLink(destination: FreePlayView().navigationBarHidden(true)) {
                             ZStack{
-                            Image("FreePlayButton")
+                            Image("FreePlay Button")
                             .resizable()
                             .scaledToFit()
                             
