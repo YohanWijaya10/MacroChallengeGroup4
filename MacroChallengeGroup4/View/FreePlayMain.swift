@@ -137,7 +137,7 @@ struct FreePlayMain: View {
                             Button(action: {
                                 isHighlightingLeftSnare.toggle()
                                 if isHighlightingLeftSnare {
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                                         withAnimation {
                                             isHighlightingLeftSnare = false
                                         }
@@ -162,7 +162,7 @@ struct FreePlayMain: View {
                             Button(action: {
                                 isHighlightingRightSnare.toggle()
                                 if isHighlightingRightSnare {
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                                         withAnimation {
                                             isHighlightingRightSnare = false
                                         }
@@ -191,7 +191,7 @@ struct FreePlayMain: View {
                             Button(action: {
                                 isHighlightingLeftKick.toggle()
                                 if isHighlightingLeftKick {
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                                         withAnimation {
                                             isHighlightingLeftKick = false
                                         }
@@ -216,7 +216,7 @@ struct FreePlayMain: View {
                             Button(action: {
                                 isHighlightingRightKick.toggle()
                                 if isHighlightingRightKick {
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                                         withAnimation {
                                             isHighlightingRightKick = false
                                         }
