@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct LearningView: View {
+struct CoursesView: View {
     var body: some View {
         ZStack{
             
@@ -232,5 +232,5 @@ struct LearningView: View {
 }
 
 #Preview {
-    LearningView()
+    CoursesView()
 }
