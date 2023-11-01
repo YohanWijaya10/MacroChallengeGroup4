@@ -24,14 +24,6 @@ extension View {
     }
 }
 
-
-struct RoundedCorner_Previews: PreviewProvider {
-    static var previews: some View {
-        RoundedCorner()
-    }
-}
-
-
 #Preview {
     RoundedCorner()
 }

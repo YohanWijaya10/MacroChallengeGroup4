@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct MainPageView: View{
-    var NamaUser: String = "Nadine"
+    var NamaUser: String
     @State private var Freeplay_isPressed = false
     @State private var Songs_isPressed = false
     @State private var Courses_isPressed = false
@@ -152,6 +152,6 @@ struct MainPageView: View{
 }
 
 #Preview {
-    MainPageView()
+    MainPageView(NamaUser: "Nadine")
 }
 
