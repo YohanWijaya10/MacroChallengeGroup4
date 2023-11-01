@@ -69,34 +69,27 @@ struct MainPageView: View{
                 HStack{
                     Button(action: {
                         withAnimation {
-                            Freeplay_isPressed.toggle()
-                        }
-                    }) {
-                        Text("Free Play")
-                            .font(.title)
-                            .frame(width: 150, height: 100)
-                            .padding()
-                            .background(Color.red)
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                            .offset(y: Freeplay_isPressed ? 5 : 0) // Menggeser tombol ke bawah saat ditekan
-                            .padding(30)
-                    }
-                                        
-                    Button(action: {
-                        withAnimation {
                             Courses_isPressed.toggle()
                         }
                     }) {
-                        Text("Courses")
-                            .font(.title)
-                            .frame(width: 150, height: 100)
-                            .padding()
-                            .background(Courses_isPressed ? Color.green : Color.green)
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                            .offset(y: Courses_isPressed ? 5 : 0) // Menggeser tombol ke bawah saat ditekan
-                            .padding(30)
+                        ZStack{
+                            Image("CoursesButton")
+                                .resizable()
+                                .scaledToFit()
+                            
+                            Spacer()
+                            Text("Courses")
+                                .font(.headline)
+                                .bold()
+                                .shadow(radius: 100)
+                                .padding(.top, 90)
+                        }
+                        .frame(width: 200, height: 150)
+                        .padding()
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        .offset(y: Courses_isPressed ? 5 : 0) // Menggeser tombol ke bawah saat ditekan
+                        .padding(10)
                     }
                     
                     Button(action: {
@@ -104,18 +97,52 @@ struct MainPageView: View{
                             Songs_isPressed.toggle()
                         }
                     }) {
-                        Text("Songs")
-                            .font(.title)
-                            .frame(width: 150, height: 100)
-                            .padding()
-                            .background(Color.blue)
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                            .offset(y: Songs_isPressed ? 5 : 0) // Menggeser tombol ke bawah saat ditekan
-                            .padding(30)
+                        ZStack{
+                            Image("SongsButton")
+                                .resizable()
+                                .scaledToFit()
+                            
+                            Spacer()
+                            Text("Songs")
+                                .font(.headline)
+                                .bold()
+                                .shadow(radius: 100)
+                                .padding(.top, 90)
+                        }
+                        .frame(width: 200, height: 150)
+                        .padding()
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        .offset(y: Songs_isPressed ? 5 : 0) // Menggeser tombol ke bawah saat ditekan
+                        .padding(10)
+                    }
+                    
+                    Button(action: {
+                        withAnimation {
+                            Freeplay_isPressed.toggle()
+                        }
+                    }) {
+                        ZStack{
+                            Image("FreePlayButton")
+                                .resizable()
+                                .scaledToFit()
+                            
+                            Spacer()
+                            Text("Free Play")
+                                .font(.headline)
+                                .bold()
+                                .shadow(radius: 100)
+                                .padding(.top, 90)
+                        }
+                        .frame(width: 200, height: 150)
+                        .padding()
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        .offset(y: Freeplay_isPressed ? 5 : 0) // Menggeser tombol ke bawah saat ditekan
+                        .padding(10)
                     }
                 }
-                .padding(.top, 100)
+                .padding(.top, 130)
                 .padding(.bottom, 50)
             }
             
