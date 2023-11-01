@@ -15,6 +15,8 @@
 		609CAE662AD7E7BD00BB2A64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609CAE652AD7E7BD00BB2A64 /* Assets.xcassets */; };
 		609CAE692AD7E7BD00BB2A64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609CAE682AD7E7BD00BB2A64 /* Preview Assets.xcassets */; };
 		60CD54292AE687D700439E2D /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD54282AE687D700439E2D /* MainPageView.swift */; };
+		709E27EC2AF235A300E8660B /* snare.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 709E27EB2AF235A300E8660B /* snare.mp3 */; };
+		709E27EE2AF235B400E8660B /* kick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 709E27ED2AF235B400E8660B /* kick.mp3 */; };
 		745E57C02ADFC0A800B53351 /* FreePlayMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E57BF2ADFC0A800B53351 /* FreePlayMain.swift */; };
 		747B08302AE8FA8200595EF8 /* ButtonAnimationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E57C22ADFC69400B53351 /* ButtonAnimationModel.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +31,8 @@
 		609CAE652AD7E7BD00BB2A64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		609CAE682AD7E7BD00BB2A64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		60CD54282AE687D700439E2D /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		709E27EB2AF235A300E8660B /* snare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = snare.mp3; sourceTree = "<group>"; };
+		709E27ED2AF235B400E8660B /* kick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kick.mp3; sourceTree = "<group>"; };
 		745E57BF2ADFC0A800B53351 /* FreePlayMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreePlayMain.swift; sourceTree = "<group>"; };
 		745E57C22ADFC69400B53351 /* ButtonAnimationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +108,8 @@
 				609CAE632AD7E7BC00BB2A64 /* ConnectingView.swift */,
 				60CD54282AE687D700439E2D /* MainPageView.swift */,
 				745E57BF2ADFC0A800B53351 /* FreePlayMain.swift */,
+				709E27EB2AF235A300E8660B /* snare.mp3 */,
+				709E27ED2AF235B400E8660B /* kick.mp3 */,
 				6040543F2AEF91DB00B6F564 /* SongListView.swift */,
 			);
 			path = View;
@@ -168,6 +174,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				609CAE692AD7E7BD00BB2A64 /* Preview Assets.xcassets in Resources */,
+				709E27EE2AF235B400E8660B /* kick.mp3 in Resources */,
+				709E27EC2AF235A300E8660B /* snare.mp3 in Resources */,
 				609CAE662AD7E7BD00BB2A64 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,7 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MacroChallengeGroup4/Preview Content\"";
-				DEVELOPMENT_TEAM = ZF4QX38RB3;
+				DEVELOPMENT_TEAM = 22JP9U997Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -351,7 +359,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MacroChallengeGroup4/Preview Content\"";
-				DEVELOPMENT_TEAM = ZF4QX38RB3;
+				DEVELOPMENT_TEAM = 22JP9U997Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
