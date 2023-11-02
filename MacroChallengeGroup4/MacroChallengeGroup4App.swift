@@ -14,9 +14,12 @@ struct Macro_coba1App: App {
     var body: some Scene {
         WindowGroup {
             ConnectingView().onAppear {
-                let landscapeOrientation = UIInterfaceOrientation.landscapeLeft.rawValue
+                let landscapeOrientation = UIInterfaceOrientation.landscapeRight.rawValue
                 UIDevice.current.setValue(landscapeOrientation, forKey: "orientation")
             }
         }
     }
 }
+
+
+
