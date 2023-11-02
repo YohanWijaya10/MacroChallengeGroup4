@@ -286,6 +286,7 @@ struct TestJSON2: Codable {
     
     
 }
+
 struct ConnectingView: View {
     @StateObject var service = BluetoothService()
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
@@ -306,7 +307,6 @@ struct ConnectingView: View {
     @State private var isFreeplayView = false
     
     @State private var isMainPageView = false
-    
     
     // Properti AVAudioPlayer
     @State private var audioPlayer1: AVAudioPlayer?
@@ -376,41 +376,92 @@ struct ConnectingView: View {
                 if !isButtonHidden{
                     Button(action: {
                         isLeftConnected = true
+                        service.connectToPeripheral2()
                         if isLeftConnected{
-                            print("left Button Connected")
-                            buttonoutlineColor_left = Color.green
-                            isFlashing_left.toggle()
+                            print("Left Button Connected")
+                            
+                            
+                            //isFlashing_right.toggle()
+                            kedip = 20
                         }
                         else{
-                            print("left Button DisConnected")
-                            buttonoutlineColor_left = Color.red
-                            isFlashing_left.toggle()
+                            print("Left Button DisConnected")
+                            buttonoutlineColor_right = Color.red
+                            
+                            
+                            
+                            isFlashing_right.toggle()
                         }
                     }) {
-                        ZStack{
-                            VStack{
-                                Image("Left Hand Icon")
-                                    .resizable()
-                                    .frame(width: 65, height: 65) //size gambar tangan
-                                    .frame(width: 115, height: 115) // size button lingkaran
-                                    .foregroundColor(Color.black)
-                                    .background(Color.white)
-                                    .clipShape(Circle())
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 115)
-                                            .stroke(isFlashing_left ? buttonoutlineColor_left : Color.yellow, lineWidth: 6)
-                                    )
-                                Text("Left Gloves")
-                                    .foregroundColor(.black)
+                        VStack{
+                            ZStack{
+                                if service.peripheralStatus2 !=  .connected{
+                                    Image("Left Hand Icon")
+                                        .resizable()
+                                        .frame(width: 65, height: 65) //size gambar tangan
+                                        .frame(width: 115, height: 115) // size button lingkaran
+                                        .foregroundColor(Color.black)
+                                        .background(Color.white)
+                                        .clipShape(Circle())
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 115)
+                                                .stroke(buttonoutlineColor_right, lineWidth: kedip)
+                                                .opacity(blink)
+                                                .animation(.easeOut(duration: 2) .repeatForever(autoreverses: true))
+                                                .onAppear(){
+                                                    blink = 1
+                                                    print(isRightConnected)
+                                                }
+                                            
+                                            
+                                        )
+                                    
+                                } else{
+                                    Image("Left Hand Icon")
+                                        .resizable()
+                                        .frame(width: 65, height: 65) //size gambar tangan
+                                        .frame(width: 115, height: 115) // size button lingkaran
+                                        .foregroundColor(Color.black)
+                                        .background(Color.white)
+                                        .clipShape(Circle())
+                                    
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 115)
+                                                .stroke(Color.green, lineWidth: 6)
+                                                .opacity(1)
+                                                .animation(.easeOut(duration: 1))
+                                            
+                                        )
+                                        .animation(.easeOut(duration: 1))
+                                }
                                 
                             }
-                            .onAppear {
-                                withAnimation(Animation.linear(duration: 1.0).repeatForever(autoreverses: true)) {
-                                    self.isFlashing_left.toggle()
+                            .animation(.easeOut(duration: 1))
+                            if service.peripheralStatus2 != .connected {
+                                if isLeftConnected == true{
+                                    Text("Connecting...")
                                 }
+                                else{
+                                    Text("Left Gloves")
+                                        .foregroundColor(.black)
+                                }
+                            }else{
+                                Text("Connected")
+                                    .foregroundColor(.black)
+                                
+                                
+                                
+                            }
+                            if service.peripheralStatus == .connected {
+                                
+                            }
+                            
+                        }
+                        .onAppear {
+                            withAnimation(Animation.linear(duration: 1.0).repeatForever(autoreverses: true)) {
+                                self.isFlashing_right.toggle()
                             }
                         }
-                        
                     }
                 } // Button Kiri
                 else{
@@ -435,31 +486,86 @@ struct ConnectingView: View {
                 if !isButtonHidden{
                     Button(action: {
                         isRightConnected = true
+                        service.connectToPeripheral()
                         if isRightConnected{
                             print("right Button Connected")
-                            buttonoutlineColor_right = Color.green
-                            isFlashing_right.toggle()
+                            
+                            
+                            //isFlashing_right.toggle()
+                            kedip = 20
                         }
                         else{
                             print("right Button DisConnected")
                             buttonoutlineColor_right = Color.red
+                            
+                            
+                            
                             isFlashing_right.toggle()
                         }
                     }) {
                         VStack{
-                            Image("Right Hand Icon")
-                                .resizable()
-                                .frame(width: 65, height: 65) //size gambar tangan
-                                .frame(width: 115, height: 115) // size button lingkaran
-                                .foregroundColor(Color.black)
-                                .background(Color.white)
-                                .clipShape(Circle())
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 115)
-                                        .stroke(isFlashing_right ? buttonoutlineColor_right : Color.yellow, lineWidth: 6)
-                                )
-                            Text("Right Gloves")
-                                .foregroundColor(.black)
+                            ZStack{
+                                if service.peripheralStatus !=  .connected{
+                                    Image("Right Hand Icon")
+                                        .resizable()
+                                        .frame(width: 65, height: 65) //size gambar tangan
+                                        .frame(width: 115, height: 115) // size button lingkaran
+                                        .foregroundColor(Color.black)
+                                        .background(Color.white)
+                                        .clipShape(Circle())
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 115)
+                                                .stroke(buttonoutlineColor_right, lineWidth: kedip)
+                                                .opacity(blink)
+                                                .animation(.easeOut(duration: 2) .repeatForever(autoreverses: true))
+                                                .onAppear(){
+                                                    blink = 1
+                                                    print(isRightConnected)
+                                                }
+                                            
+                                            
+                                        )
+                                    
+                                } else{
+                                    Image("Right Hand Icon")
+                                        .resizable()
+                                        .frame(width: 65, height: 65) //size gambar tangan
+                                        .frame(width: 115, height: 115) // size button lingkaran
+                                        .foregroundColor(Color.black)
+                                        .background(Color.white)
+                                        .clipShape(Circle())
+                                    
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 115)
+                                                .stroke(Color.green, lineWidth: 6)
+                                                .opacity(1)
+                                                .animation(.easeOut(duration: 1))
+                                            
+                                        )
+                                        .animation(.easeOut(duration: 1))
+                                }
+                                
+                            }
+                            .animation(.easeOut(duration: 1))
+                            if service.peripheralStatus != .connected {
+                                if isRightConnected == true{
+                                    Text("Connecting...")
+                                }
+                                else{
+                                    Text("Right Gloves")
+                                        .foregroundColor(.black)
+                                }
+                            }else{
+                                Text("Connected")
+                                    .foregroundColor(.black)
+                                
+                                
+                                
+                            }
+                            if service.peripheralStatus == .connected {
+                                
+                            }
+                            
                         }
                         .onAppear {
                             withAnimation(Animation.linear(duration: 1.0).repeatForever(autoreverses: true)) {
@@ -476,12 +582,17 @@ struct ConnectingView: View {
                 
             }
             
-            if isLeftConnected && isRightConnected {
-                VStack {
-                    Spacer().frame(maxHeight:250)
+            VStack {
+                Group{
+                    Spacer()
+                    Spacer()
+                }
+                
+                if service.peripheralStatus == .connected {
                     Button(action: {
                         print("Done Button tapped")
-                        isMainPageView = true
+                        isFreeplayView = true
+                        service.connectToPeripheral()
                     }) {
                         Text("Done")
                             .font(.title)
@@ -494,17 +605,58 @@ struct ConnectingView: View {
                                     .stroke(Color.black, lineWidth: 3)
                             )
                             .cornerRadius(10)
+                        
                     } // button next buat ke halaman selanjutnya setelah connect
                     .padding()
                     .sheet(isPresented: $isMainPageView, content: {
-                        MainPageView(NamaUser: "")
+                        MainPageView(NamaUser: "Nadine")
                     })
-
+                    
                 }
                 
+                Spacer()
             }
+            .animation(.easeOut(duration: 0.3))
             
-            Spacer()
+            
+            
+            
+        }.onAppear(){
+            service.isScanning = true
+            service.isScanning2 = true
+        }
+        .onReceive(Just(service.SnareV)) { snareVal in
+            
+            if snareVal == 1{
+                playSound(fileName: "snare", fileExtension: "mp3")
+            } else if snareVal == 4{
+                playSound1(fileName: "kick", fileExtension: "mp3")
+            } else{
+                
+            }
+        }
+        
+        
+    }
+    func playSound(fileName: String, fileExtension: String) {
+        if let soundURL = Bundle.main.url(forResource: fileName, withExtension: fileExtension) {
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
+                audioPlayer?.play()
+            } catch {
+                print("Error playing sound: \(error.localizedDescription)")
+            }
+        }
+    }
+    func playSound1(fileName: String, fileExtension: String) {
+        if let soundURL = Bundle.main.url(forResource: fileName, withExtension: fileExtension) {
+            do {
+                audioPlayer1 = try AVAudioPlayer(contentsOf: soundURL)
+                audioPlayer1?.volume = 1
+                audioPlayer1?.play()
+            } catch {
+                print("Error playing sound: \(error.localizedDescription)")
+            }
         }
     }
 }
