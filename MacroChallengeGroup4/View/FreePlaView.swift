@@ -13,7 +13,11 @@ struct FreePlayView: View {
     @State private var isHighlightingRightSnare = false
     @State private var isHighlightingLeftKick = false
     @State private var isHighlightingRightKick = false
+    @State private var warna: Color = .black
+    @State private var opacity1: Double = 0.5
     
+    @EnvironmentObject var service: BluetoothService
+
     var body: some View {
         ZStack{
             
@@ -128,19 +132,37 @@ struct FreePlayView: View {
                                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                             
                             Button(action: {
-                                isHighlightingLeftSnare.toggle()
-                                if isHighlightingLeftSnare {
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
-                                        withAnimation {
-                                            isHighlightingLeftSnare = false
+                                if service.SnareV == 4 {
+                                    isHighlightingLeftSnare.toggle()
+                                    if isHighlightingLeftSnare {
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
+                                            withAnimation {
+                                                isHighlightingLeftSnare = false
+                                            }
                                         }
                                     }
                                 }
                             }) {
-                                Text("Snare")
-                                    .font(.system(size: 40, weight: .bold, design: .rounded))
-                                    .opacity(isHighlightingLeftSnare ? 1.0 : 0.3)
-                                    .foregroundColor(isHighlightingLeftSnare ? .black : .black)
+                                if service.SnareV ==  1{
+                                    Text("Snare")
+                                        .font(.system(size: 40, weight: .bold, design: .rounded))
+                                        .opacity(1)
+                                        .foregroundColor(isHighlightingLeftSnare ? .black : .black)
+                                        .animation(.easeInOut(duration: 0.5))
+                                }else if service.SnareV == 4{
+                                    Text("Snare")
+                                        .font(.system(size: 40, weight: .bold, design: .rounded))
+                                        .opacity(0.3)
+                                        .foregroundColor(isHighlightingLeftSnare ? .black : .black)
+                                        .animation(.easeInOut(duration: 0.5))
+                                }
+                                else{
+                                    Text("Snare")
+                                        .font(.system(size: 40, weight: .bold, design: .rounded))
+                                        .opacity(0.3)
+                                        .foregroundColor(isHighlightingLeftSnare ? .black : .black)
+                                        .animation(.easeInOut(duration: 0.5))
+                                }
                             }
                             
                             ButtonAnimationModel(isHighlightingObject: $isHighlightingLeftSnare)
@@ -216,10 +238,27 @@ struct FreePlayView: View {
                                     }
                                 }
                             }) {
-                                Text("Kick")
-                                    .font(.system(size: 40, weight: .bold, design: .rounded))
-                                    .opacity(isHighlightingRightKick ? 1.0 : 0.3)
-                                    .foregroundColor(isHighlightingRightKick ? .black : .black)
+                                if service.SnareV == 4{
+                                    Text("Kick")
+                                        .font(.system(size: 40, weight: .bold, design: .rounded))
+                                        .opacity(1)
+                                        .foregroundColor(isHighlightingRightKick ? .black : .black)
+                                        .animation(.easeInOut(duration: 1))
+                                }else if service.SnareV == 1{
+                                    Text("Kick")
+                                        .font(.system(size: 40, weight: .bold, design: .rounded))
+                                        .opacity(0.3)
+                                        .foregroundColor(isHighlightingRightKick ? .black : .black)
+                                        .animation(.easeInOut(duration: 1))
+                                
+                                }else{
+                                    Text("Kick")
+                                        .font(.system(size: 40, weight: .bold, design: .rounded))
+                                        .opacity(0.3)
+                                        .foregroundColor(isHighlightingRightKick ? .black : .black)
+                                        .animation(.easeInOut(duration: 1))
+                                    
+                                }
                             }
                             
                             ButtonAnimationModel(isHighlightingObject: $isHighlightingRightKick)
@@ -230,6 +269,24 @@ struct FreePlayView: View {
                 
             }
             .ignoresSafeArea(.all)
+            HStack {
+                VStack{
+                    NavigationLink(destination: MainPageView(NamaUser: "Osama").navigationBarHidden(true)) {
+                        ZStack{
+                            Rectangle()
+                                .frame(width: 40, height: 40)
+                                .background(Color("Navy"))
+                                .roundedCorner(10, corners: .allCorners)
+                            Image(systemName: "arrow.uturn.backward")
+                                .foregroundColor(.white).bold()
+                        }
+                    }
+                    .padding(10)
+        
+                    Spacer()
+                }
+                Spacer()
+            }
             
         }
     }
