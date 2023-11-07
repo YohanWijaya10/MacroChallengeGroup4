@@ -1,8 +1,8 @@
 //
 //  SongListView.swift
-//  MacroCoba2
+//  MacroChallengeGroup4
 //
-//  Created by Brian Putrantio on 23/10/23.
+//  Created by Brian Putrantio on 30/10/23.
 //
 
 import Foundation
@@ -30,7 +30,9 @@ struct SongListView: View {
                             ZStack{
                                 VStack{
                                     ZStack{
-                                        NavigationLink(destination: MainPageView(NamaUser: "Nadine").navigationBarHidden(true)) {
+                                        Button(action: {
+                                            
+                                        }) {
                                             ZStack{
                                                 RoundedRectangle(cornerRadius: 10)
                                                     .frame(width: 40, height: 40)
@@ -42,20 +44,6 @@ struct SongListView: View {
                                             }
                                             .padding(.trailing, 650)
                                         }
-//                                        Button(action: {
-//
-//                                        }) {
-//                                            ZStack{
-//                                                RoundedRectangle(cornerRadius: 10)
-//                                                    .frame(width: 40, height: 40)
-//                                                    .foregroundColor(Color("Navy"))
-//                                                    .cornerRadius(10)
-//
-//                                                Image(systemName:  "arrowshape.turn.up.backward.fill")
-//                                                    .foregroundColor(Color("Papyrus"))
-//                                            }
-//                                            .padding(.trailing, 650)
-//                                        }
                                         
                                         Text("Songs")
                                             .font(.title)

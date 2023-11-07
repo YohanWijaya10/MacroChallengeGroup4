@@ -1,8 +1,8 @@
 //
-//  LearningView.swift
-//  MacroCoba2
+//  CoursesView.swift
+//  MacroChallengeGroup4
 //
-//  Created by Brian Putrantio on 30/10/23.
+//  Created by Brian Putrantio on 01/11/23.
 //
 
 import Foundation
@@ -21,7 +21,9 @@ struct CoursesView: View {
                         
                         ZStack{
                             ZStack{
-                                NavigationLink(destination: MainPageView(NamaUser: "Nadine").navigationBarHidden(true)) {
+                                Button(action: {
+                                    
+                                }) {
                                     ZStack{
                                         RoundedRectangle(cornerRadius: 10)
                                             .frame(width: 50, height: 50)
@@ -32,19 +34,6 @@ struct CoursesView: View {
                                             .foregroundColor(Color("Papyrus"))
                                     }
                                 }
-//                                Button(action: {
-//
-//                                }) {
-//                                    ZStack{
-//                                        RoundedRectangle(cornerRadius: 10)
-//                                            .frame(width: 50, height: 50)
-//                                            .foregroundColor(Color("Navy"))
-//                                            .cornerRadius(10)
-//
-//                                        Image(systemName:  "arrowshape.turn.up.backward.fill")
-//                                            .foregroundColor(Color("Papyrus"))
-//                                    }
-//                                }
                             }
                             .padding(.trailing, 650)
                             

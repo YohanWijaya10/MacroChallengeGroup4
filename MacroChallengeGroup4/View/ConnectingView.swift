@@ -65,7 +65,6 @@ class BluetoothService: NSObject, ObservableObject {
     
     @Published var SnareV: Double = 0
     @Published var KickV: Double = 0
-    @Published var BassV: Double = 0
     
     
     override init() {
@@ -224,7 +223,6 @@ extension BluetoothService: CBPeripheralDelegate {
             gyroValueX = Double(dataValue.accelX) ?? 0
             gyroValueZ = Double(dataValue.accelZ) ?? 0
             SnareV = Double(dataValue.Snare1) ?? 0
-            BassV = Double(dataValue.bass1) ?? 0
             
             
             
@@ -259,7 +257,6 @@ extension BluetoothService: CBPeripheralDelegate {
             KickV = Double(dataValue2.Kick1) ?? 0
             print("\(KickV) : \(SnareV) ")
             
-            
         }
         
     }
@@ -274,7 +271,6 @@ struct TestJSON: Codable {
     var gyroX: String
     var gyroZ: String
     var Snare1: String
-    var bass1: String
     
 }
 
@@ -311,9 +307,6 @@ struct ConnectingView: View {
     @State private var isFreeplayView = false
     
     @State private var isMainPageView = false
-    @State private var DoneTap = true
-
-    
     
     // Properti AVAudioPlayer
     @State private var audioPlayer1: AVAudioPlayer?
@@ -459,7 +452,9 @@ struct ConnectingView: View {
                                 
                                 
                             }
-                           
+                            if service.peripheralStatus == .connected {
+                                
+                            }
                             
                         }
                         .onAppear {
@@ -593,10 +588,10 @@ struct ConnectingView: View {
                     Spacer()
                 }
                 
-                if DoneTap ==  true {
+                if service.peripheralStatus == .connected {
                     Button(action: {
                         print("Done Button tapped")
-                        isMainPageView = true
+                        isFreeplayView = true
                         service.connectToPeripheral()
                     }) {
                         Text("Done")
@@ -615,7 +610,6 @@ struct ConnectingView: View {
                     .padding()
                     .sheet(isPresented: $isMainPageView, content: {
                         MainPageView(NamaUser: "Nadine")
-                            .environmentObject(service)
                     })
                     
                 }
@@ -634,19 +628,9 @@ struct ConnectingView: View {
         .onReceive(Just(service.SnareV)) { snareVal in
             
             if snareVal == 1{
-                playSound(fileName: "snarenew", fileExtension: "mp3")
-            } else if snareVal == 2{
-                playSound(fileName: "bassnew", fileExtension: "mp3")
-            } else{
-                
-            }
-        }
-        .onReceive(Just(service.BassV)) { bassVal in
-            
-            if bassVal == 3{
-                playSound1(fileName: "snarenew", fileExtension: "mp3")
-            } else if bassVal == 4{
-                playSound1(fileName: "bassnew", fileExtension: "mp3")
+                playSound(fileName: "snare", fileExtension: "mp3")
+            } else if snareVal == 4{
+                playSound1(fileName: "kick", fileExtension: "mp3")
             } else{
                 
             }
