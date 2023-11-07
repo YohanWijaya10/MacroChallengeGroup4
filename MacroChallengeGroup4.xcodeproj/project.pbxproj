@@ -26,7 +26,7 @@
 		74C194452AF2504900D38E3B /* ConnectingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C194442AF2504900D38E3B /* ConnectingViewController.swift */; };
 		74EFF2EE2AEF9EA200AAF959 /* MainCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EFF2ED2AEF9EA200AAF959 /* MainCardViewModel.swift */; };
 		74EFF2F02AEFAA5300AAF959 /* SongPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EFF2EF2AEFAA5300AAF959 /* SongPlayView.swift */; };
-		74EFF2F22AEFAA6200AAF959 /* SongLearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EFF2F12AEFAA6200AAF959 /* SongLearningView.swift */; };
+		74EFF2F22AEFAA6200AAF959 /* CoursesPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EFF2F12AEFAA6200AAF959 /* CoursesPlayView.swift */; };
 		74EFF2F42AEFAFD400AAF959 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EFF2F32AEFAFD400AAF959 /* CardViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +52,7 @@
 		74C194442AF2504900D38E3B /* ConnectingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectingViewController.swift; sourceTree = "<group>"; };
 		74EFF2ED2AEF9EA200AAF959 /* MainCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardViewModel.swift; sourceTree = "<group>"; };
 		74EFF2EF2AEFAA5300AAF959 /* SongPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayView.swift; sourceTree = "<group>"; };
-		74EFF2F12AEFAA6200AAF959 /* SongLearningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongLearningView.swift; sourceTree = "<group>"; };
+		74EFF2F12AEFAA6200AAF959 /* CoursesPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesPlayView.swift; sourceTree = "<group>"; };
 		74EFF2F32AEFAFD400AAF959 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,7 +138,7 @@
 				6054A0122AF241C200C29611 /* CoursesView.swift */,
 				745E57BF2ADFC0A800B53351 /* FreePlayView.swift */,
 				74EFF2EF2AEFAA5300AAF959 /* SongPlayView.swift */,
-				74EFF2F12AEFAA6200AAF959 /* SongLearningView.swift */,
+				74EFF2F12AEFAA6200AAF959 /* CoursesPlayView.swift */,
 				747AA52D2AF23A8D000F5928 /* PauseView.swift */,
 			);
 			path = View;
@@ -233,7 +233,7 @@
 				604054402AEF91DB00B6F564 /* SongListView.swift in Sources */,
 				747B08302AE8FA8200595EF8 /* ButtonAnimationModel.swift in Sources */,
 				744EA9E42AF4F48C002E8AFC /* ScoreViewModel.swift in Sources */,
-				74EFF2F22AEFAA6200AAF959 /* SongLearningView.swift in Sources */,
+				74EFF2F22AEFAA6200AAF959 /* CoursesPlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
