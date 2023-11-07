@@ -20,23 +20,6 @@ struct CoursesView: View {
                             .frame(maxWidth: .infinity, maxHeight: 80)
                         
                         ZStack{
-                            ZStack{
-                                Button(action: {
-                                    
-                                }) {
-                                    ZStack{
-                                        RoundedRectangle(cornerRadius: 10)
-                                            .frame(width: 50, height: 50)
-                                            .foregroundColor(Color("Navy"))
-                                            .cornerRadius(10)
-                                        
-                                        Image(systemName:  "arrowshape.turn.up.backward.fill")
-                                            .foregroundColor(Color("Papyrus"))
-                                    }
-                                }
-                            }
-                            .padding(.trailing, 650)
-                            
                             Text("Courses")
                                 .font(.title)
                                 .bold()
@@ -227,6 +210,25 @@ struct CoursesView: View {
                 }
             }
             .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            
+            HStack {
+                VStack{
+                    NavigationLink(destination: MainPageView(NamaUser: "Osama").navigationBarHidden(true)) {
+                        ZStack{
+                            Rectangle()
+                                .frame(width: 40, height: 40)
+                                .background(Color("Navy"))
+                                .opacity(1.0)
+                                .roundedCorner(10, corners: .allCorners)
+                            Image(systemName: "arrow.uturn.backward")
+                                .foregroundColor(.white).bold()
+                        }
+                    }
+                    .padding(.init(top: 20, leading: 20, bottom: 0, trailing: 20))
+                    Spacer()
+                }
+                Spacer()
+            }
         }
     }
 }

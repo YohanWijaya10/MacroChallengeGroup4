@@ -30,21 +30,6 @@ struct SongListView: View {
                             ZStack{
                                 VStack{
                                     ZStack{
-                                        Button(action: {
-                                            
-                                        }) {
-                                            ZStack{
-                                                RoundedRectangle(cornerRadius: 10)
-                                                    .frame(width: 40, height: 40)
-                                                    .foregroundColor(Color("Navy"))
-                                                    .cornerRadius(10)
-                                                
-                                                Image(systemName:  "arrowshape.turn.up.backward.fill")
-                                                    .foregroundColor(Color("Papyrus"))
-                                            }
-                                            .padding(.trailing, 650)
-                                        }
-                                        
                                         Text("Songs")
                                             .font(.title)
                                             .bold()
@@ -120,7 +105,27 @@ struct SongListView: View {
                             }
                         }
                     }
+                    
+                    
                 }
+            }
+            HStack {
+                VStack{
+                    NavigationLink(destination: MainPageView(NamaUser: "Osama").navigationBarHidden(true)) {
+                        ZStack{
+                            Rectangle()
+                                .frame(width: 40, height: 40)
+                                .background(Color("Navy"))
+                                .opacity(1.0)
+                                .roundedCorner(10, corners: .allCorners)
+                            Image(systemName: "arrow.uturn.backward")
+                                .foregroundColor(.white).bold()
+                        }
+                    }
+                    .padding(.init(top: 10, leading: 60, bottom: 10, trailing: 10))
+                    Spacer()
+                }
+                Spacer()
             }
         }
     }

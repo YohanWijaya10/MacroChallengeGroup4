@@ -15,7 +15,9 @@
 		609CAE662AD7E7BD00BB2A64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609CAE652AD7E7BD00BB2A64 /* Assets.xcassets */; };
 		609CAE692AD7E7BD00BB2A64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609CAE682AD7E7BD00BB2A64 /* Preview Assets.xcassets */; };
 		60CD54292AE687D700439E2D /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD54282AE687D700439E2D /* MainPageView.swift */; };
-		745E57C02ADFC0A800B53351 /* FreePlaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E57BF2ADFC0A800B53351 /* FreePlaView.swift */; };
+		744EA9E42AF4F48C002E8AFC /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EA9E32AF4F48C002E8AFC /* ScoreViewModel.swift */; };
+		744EA9E62AF4F4A0002E8AFC /* LeaderboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EA9E52AF4F4A0002E8AFC /* LeaderboardModel.swift */; };
+		745E57C02ADFC0A800B53351 /* FreePlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E57BF2ADFC0A800B53351 /* FreePlayView.swift */; };
 		747AA52E2AF23A8D000F5928 /* PauseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747AA52D2AF23A8D000F5928 /* PauseView.swift */; };
 		747AA5322AF23F6C000F5928 /* Kick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 747AA5302AF23F6C000F5928 /* Kick.mp3 */; };
 		747AA5332AF23F6C000F5928 /* Snare.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 747AA5312AF23F6C000F5928 /* Snare.mp3 */; };
@@ -32,21 +34,21 @@
 		6040543D2AEF90B400B6F564 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		6040543F2AEF91DB00B6F564 /* SongListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListView.swift; sourceTree = "<group>"; };
 		6054A0122AF241C200C29611 /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
-		606184B62ADEEB7900CAAC82 /* ConnectingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingViewController.swift; sourceTree = "<group>"; };
-		609CAE5E2AD7E7BC00BB2A64 /* MacroChallengeGroup4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MacroChallengeGroup4.app; path = "/Users/wantoniusd.silverfangs/Documents/GitHub/Workbench/MacroChallengeGroup4/build/Debug-iphoneos/MacroChallengeGroup4.app"; sourceTree = "<absolute>"; };
 		609CAE612AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroChallengeGroup4App.swift; sourceTree = "<group>"; };
 		609CAE632AD7E7BC00BB2A64 /* ConnectingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingView.swift; sourceTree = "<group>"; };
 		609CAE652AD7E7BD00BB2A64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		609CAE682AD7E7BD00BB2A64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		60CD54282AE687D700439E2D /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
-		709E27EB2AF235A300E8660B /* snare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = snare.mp3; sourceTree = "<group>"; };
-		709E27ED2AF235B400E8660B /* kick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kick.mp3; sourceTree = "<group>"; };
-		745E57BF2ADFC0A800B53351 /* FreePlaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreePlaView.swift; sourceTree = "<group>"; };
+		744EA9E12AF4D0C0002E8AFC /* Empty.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Empty.md; sourceTree = "<group>"; };
+		744EA9E32AF4F48C002E8AFC /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
+		744EA9E52AF4F4A0002E8AFC /* LeaderboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardModel.swift; sourceTree = "<group>"; };
+		745E57BF2ADFC0A800B53351 /* FreePlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreePlayView.swift; sourceTree = "<group>"; };
 		745E57C22ADFC69400B53351 /* ButtonAnimationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimationModel.swift; sourceTree = "<group>"; };
 		747AA52D2AF23A8D000F5928 /* PauseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseView.swift; sourceTree = "<group>"; };
 		747AA5302AF23F6C000F5928 /* Kick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kick.mp3; sourceTree = "<group>"; };
 		747AA5312AF23F6C000F5928 /* Snare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Snare.mp3; sourceTree = "<group>"; };
 		747AA5342AF24215000F5928 /* MainPageButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageButtonModel.swift; sourceTree = "<group>"; };
+		749C27142AF3815F004C28D1 /* MacroChallengeGroup4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacroChallengeGroup4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C194442AF2504900D38E3B /* ConnectingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectingViewController.swift; sourceTree = "<group>"; };
 		74EFF2ED2AEF9EA200AAF959 /* MainCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardViewModel.swift; sourceTree = "<group>"; };
 		74EFF2EF2AEFAA5300AAF959 /* SongPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayView.swift; sourceTree = "<group>"; };
@@ -69,7 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				609CAE602AD7E7BC00BB2A64 /* MacroChallengeGroup4 */,
-				74C194432AF24FB100D38E3B /* Recovered References */,
+				749C27142AF3815F004C28D1 /* MacroChallengeGroup4.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,10 +79,11 @@
 			isa = PBXGroup;
 			children = (
 				609CAE612AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift */,
-				74C194442AF2504900D38E3B /* ConnectingViewController.swift */,
+				744EA9E22AF4DDE8002E8AFC /* Components */,
 				745E57C12ADFC67F00B53351 /* Model */,
 				74BF29C62AE7B9C500E318CD /* View */,
 				609CAE652AD7E7BD00BB2A64 /* Assets.xcassets */,
+				744EA9E12AF4D0C0002E8AFC /* Empty.md */,
 				747AA52F2AF23F51000F5928 /* Sound Assets */,
 				609CAE672AD7E7BD00BB2A64 /* Preview Content */,
 			);
@@ -95,14 +98,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		745E57C12ADFC67F00B53351 /* Model */ = {
+		744EA9E22AF4DDE8002E8AFC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				74C194442AF2504900D38E3B /* ConnectingViewController.swift */,
 				745E57C22ADFC69400B53351 /* ButtonAnimationModel.swift */,
 				6040543D2AEF90B400B6F564 /* RoundedCorner.swift */,
 				74EFF2ED2AEF9EA200AAF959 /* MainCardViewModel.swift */,
 				74EFF2F32AEFAFD400AAF959 /* CardViewModel.swift */,
 				747AA5342AF24215000F5928 /* MainPageButtonModel.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		745E57C12ADFC67F00B53351 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				744EA9E32AF4F48C002E8AFC /* ScoreViewModel.swift */,
+				744EA9E52AF4F4A0002E8AFC /* LeaderboardModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,24 +134,14 @@
 			children = (
 				609CAE632AD7E7BC00BB2A64 /* ConnectingView.swift */,
 				60CD54282AE687D700439E2D /* MainPageView.swift */,
-				709E27EB2AF235A300E8660B /* snare.mp3 */,
-				709E27ED2AF235B400E8660B /* kick.mp3 */,
 				6040543F2AEF91DB00B6F564 /* SongListView.swift */,
 				6054A0122AF241C200C29611 /* CoursesView.swift */,
-				745E57BF2ADFC0A800B53351 /* FreePlaView.swift */,
+				745E57BF2ADFC0A800B53351 /* FreePlayView.swift */,
 				74EFF2EF2AEFAA5300AAF959 /* SongPlayView.swift */,
 				74EFF2F12AEFAA6200AAF959 /* SongLearningView.swift */,
 				747AA52D2AF23A8D000F5928 /* PauseView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		74C194432AF24FB100D38E3B /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				606184B62ADEEB7900CAAC82 /* ConnectingViewController.swift */,
-			);
-			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +161,7 @@
 			);
 			name = MacroChallengeGroup4;
 			productName = MacroChallengeGroup4;
-			productReference = 609CAE5E2AD7E7BC00BB2A64 /* MacroChallengeGroup4.app */;
+			productReference = 749C27142AF3815F004C28D1 /* MacroChallengeGroup4.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -220,14 +223,16 @@
 				747AA52E2AF23A8D000F5928 /* PauseView.swift in Sources */,
 				74C194452AF2504900D38E3B /* ConnectingViewController.swift in Sources */,
 				609CAE642AD7E7BC00BB2A64 /* ConnectingView.swift in Sources */,
+				744EA9E62AF4F4A0002E8AFC /* LeaderboardModel.swift in Sources */,
 				60CD54292AE687D700439E2D /* MainPageView.swift in Sources */,
 				609CAE622AD7E7BC00BB2A64 /* MacroChallengeGroup4App.swift in Sources */,
-				745E57C02ADFC0A800B53351 /* FreePlaView.swift in Sources */,
+				745E57C02ADFC0A800B53351 /* FreePlayView.swift in Sources */,
 				74EFF2EE2AEF9EA200AAF959 /* MainCardViewModel.swift in Sources */,
 				74EFF2F02AEFAA5300AAF959 /* SongPlayView.swift in Sources */,
 				74EFF2F42AEFAFD400AAF959 /* CardViewModel.swift in Sources */,
 				604054402AEF91DB00B6F564 /* SongListView.swift in Sources */,
 				747B08302AE8FA8200595EF8 /* ButtonAnimationModel.swift in Sources */,
+				744EA9E42AF4F48C002E8AFC /* ScoreViewModel.swift in Sources */,
 				74EFF2F22AEFAA6200AAF959 /* SongLearningView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
