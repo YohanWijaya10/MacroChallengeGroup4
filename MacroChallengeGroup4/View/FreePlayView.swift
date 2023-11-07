@@ -15,7 +15,7 @@ struct FreePlayView: View {
     @State private var isHighlightingRightKick = false
     
     var body: some View {
-        NavigationStack{
+    
             ZStack{
                 //MARK: This is the background of the app
                 VStack(alignment: .center, spacing: .zero){
@@ -243,20 +243,18 @@ struct FreePlayView: View {
                                 Rectangle()
                                     .frame(width: 40, height: 40)
                                     .background(Color("Navy"))
+                                    .opacity(1.0)
                                     .roundedCorner(10, corners: .allCorners)
                                 Image(systemName: "arrow.uturn.backward")
                                     .foregroundColor(.white).bold()
                             }
                         }
                         .padding(10)
-            
                         Spacer()
                     }
                     Spacer()
                 }
             }
-        }
-        .ignoresSafeArea(.all)
         
     }
 }

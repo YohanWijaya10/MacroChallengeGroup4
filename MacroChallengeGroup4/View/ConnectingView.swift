@@ -583,10 +583,6 @@ struct ConnectingView: View {
             }
             
             VStack {
-                Group{
-                    Spacer()
-                    Spacer()
-                }
                 
                 if service.peripheralStatus == .connected {
                     Button(action: {
