@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  MacroChallengeGroup4
-//
-//  Created by Brian Putrantio on 12/10/23.
-//
-
 import SwiftUI
 import Foundation
 import CoreBluetooth
@@ -64,8 +57,8 @@ class BluetoothService: NSObject, ObservableObject {
     
     
     @Published var SnareV: Double = 0
+    @Published var Bass1: Double = 0
     @Published var KickV: Double = 0
-    @Published var BassV: Double = 0
     
     
     override init() {
@@ -224,7 +217,7 @@ extension BluetoothService: CBPeripheralDelegate {
             gyroValueX = Double(dataValue.accelX) ?? 0
             gyroValueZ = Double(dataValue.accelZ) ?? 0
             SnareV = Double(dataValue.Snare1) ?? 0
-            BassV = Double(dataValue.bass1) ?? 0
+            Bass1 = Double(dataValue.Bass) ?? 0
             
             
             
@@ -259,7 +252,6 @@ extension BluetoothService: CBPeripheralDelegate {
             KickV = Double(dataValue2.Kick1) ?? 0
             print("\(KickV) : \(SnareV) ")
             
-            
         }
         
     }
@@ -274,7 +266,7 @@ struct TestJSON: Codable {
     var gyroX: String
     var gyroZ: String
     var Snare1: String
-    var bass1: String
+    var Bass: String
     
 }
 
@@ -311,12 +303,11 @@ struct ConnectingView: View {
     @State private var isFreeplayView = false
     
     @State private var isMainPageView = false
-    @State private var DoneTap = true
-
-    
     
     // Properti AVAudioPlayer
     @State private var audioPlayer1: AVAudioPlayer?
+    @State private var audioPlayer2: AVAudioPlayer?
+    @State private var audioPlayer3: AVAudioPlayer?
     
     @State private var snareMinY: Double = 0.0
     @State private var snareMaxY: Double = 0.0
@@ -375,7 +366,7 @@ struct ConnectingView: View {
                     .fill(Color.yellow)
                     .frame(width: 145, height: 145)
                 
-            } //Tampilan Lingkaran2
+            } //Tampilan Lingkaran2x
             
             HStack{
                 
@@ -459,7 +450,9 @@ struct ConnectingView: View {
                                 
                                 
                             }
-                           
+                            if service.peripheralStatus == .connected {
+                                
+                            }
                             
                         }
                         .onAppear {
@@ -593,7 +586,7 @@ struct ConnectingView: View {
                     Spacer()
                 }
                 
-                if DoneTap ==  true {
+                if service.peripheralStatus == .connected {
                     Button(action: {
                         print("Done Button tapped")
                         isMainPageView = true
@@ -636,17 +629,17 @@ struct ConnectingView: View {
             if snareVal == 1{
                 playSound(fileName: "snarenew", fileExtension: "mp3")
             } else if snareVal == 2{
-                playSound(fileName: "bassnew", fileExtension: "mp3")
+                playSound1(fileName: "bassnew", fileExtension: "mp3")
             } else{
                 
             }
         }
-        .onReceive(Just(service.BassV)) { bassVal in
+        .onReceive(Just(service.Bass1)) { snare in
             
-            if bassVal == 3{
-                playSound1(fileName: "snarenew", fileExtension: "mp3")
-            } else if bassVal == 4{
-                playSound1(fileName: "bassnew", fileExtension: "mp3")
+            if snare == 1{
+                playSound2(fileName: "snarenew", fileExtension: "mp3")
+            } else if snare == 2{
+                playSound3(fileName: "bassnew", fileExtension: "mp3")
             } else{
                 
             }
@@ -670,6 +663,28 @@ struct ConnectingView: View {
                 audioPlayer1 = try AVAudioPlayer(contentsOf: soundURL)
                 audioPlayer1?.volume = 1
                 audioPlayer1?.play()
+            } catch {
+                print("Error playing sound: \(error.localizedDescription)")
+            }
+        }
+    }
+    func playSound2(fileName: String, fileExtension: String) {
+        if let soundURL = Bundle.main.url(forResource: fileName, withExtension: fileExtension) {
+            do {
+                audioPlayer2 = try AVAudioPlayer(contentsOf: soundURL)
+                audioPlayer2?.volume = 1
+                audioPlayer2?.play()
+            } catch {
+                print("Error playing sound: \(error.localizedDescription)")
+            }
+        }
+    }
+    func playSound3(fileName: String, fileExtension: String) {
+        if let soundURL = Bundle.main.url(forResource: fileName, withExtension: fileExtension) {
+            do {
+                audioPlayer3 = try AVAudioPlayer(contentsOf: soundURL)
+                audioPlayer3?.volume = 1
+                audioPlayer3?.play()
             } catch {
                 print("Error playing sound: \(error.localizedDescription)")
             }
