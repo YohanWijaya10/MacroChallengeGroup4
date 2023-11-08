@@ -30,6 +30,19 @@ struct SongListView: View {
                             ZStack{
                                 VStack{
                                     ZStack{
+                                        NavigationLink(destination: MainPageView(NamaUser: "Nadine").navigationBarHidden(true)) {
+                                            ZStack{
+                                                RoundedRectangle(cornerRadius: 10)
+                                                    .frame(width: 40, height: 40)
+                                                    .foregroundColor(Color("Navy"))
+                                                    .cornerRadius(10)
+                                                
+                                                Image(systemName:  "arrowshape.turn.up.backward.fill")
+                                                    .foregroundColor(Color("Papyrus"))
+                                            }
+                                            .padding(.trailing, 650)
+                                        }
+                                        
                                         Text("Songs")
                                             .font(.title)
                                             .bold()
@@ -41,10 +54,18 @@ struct SongListView: View {
                                         RoundedRectangle(cornerRadius: 50)
                                             .frame(width: 700, height: 40)
                                             .foregroundColor(Color("Papyrus"))
+                                        
                                         HStack{
-                                            Text("All")
-                                                .padding(.leading, 10)
-                                                .padding(.trailing, 50)
+                                            ZStack{
+                                                RoundedRectangle(cornerRadius: 50)
+                                                    .frame(width: 80, height: 30)
+                                                    .foregroundColor(Color("Navy"))
+                                                
+                                                Text("All")
+                                                    .foregroundColor(Color("Papyrus"))
+                                            }
+                                            .padding(.leading, 10)
+                                            .padding(.trailing, 30)
                                             
                                             Text("Pop")
                                                 .padding(.leading, 10)
@@ -79,13 +100,60 @@ struct SongListView: View {
                                     ForEach(0..<4, id: \.self) { index in
                                         ZStack{
                                             RoundedRectangle(cornerRadius: 20)
-                                                .frame(width: 120, height: 150)
-                                                .foregroundColor(Color("Navy"))
+                                                .frame(width: 150, height: 180)
+                                                .foregroundColor(Color("Cyan"))
                                                 .padding(.top, 50)
                                             
                                             Text("Item \(index + 1)")
+                                            
+                                            VStack{
+                                                Spacer()
+                                                    .frame(height: 160)
+                                                
+                                                ZStack{
+                                                    RoundedRectangle(cornerRadius: 10)
+                                                        .frame(width: 120, height: 35)
+                                                        .foregroundColor(Color("Navy"))
+                                                    
+                                                    HStack{
+                                                        VStack{
+                                                            Text("Song Title")
+                                                                .font(.footnote)
+                                                                .bold()
+                                                            
+                                                            HStack{
+                                                                Text("Artist")
+                                                                    .font(.footnote)
+                                                                
+                                                                Spacer()
+                                                                    .frame(width: 30)
+                                                            }
+                                                        }
+                                                        
+                                                        Spacer()
+                                                            .frame(width: 40)
+                                                    }
+                                                    .foregroundColor(Color("White"))
+                                                    
+                                                    HStack{
+                                                        Spacer()
+                                                            .frame(width: 80)
+                                                        ZStack{
+                                                            Circle()
+                                                            
+                                                            Image(systemName: "arrow.right")
+                                                                .foregroundColor(Color("Navy"))
+                                                        }
+                                                        .frame(width: 25)
+                                                    }
+                                                    .foregroundColor(Color("White"))
+                                                }
+                                                .frame(width: 120, height: 35)
+                                            }
                                         }
-                                        .padding(.horizontal, 30)
+                                        .frame(width: 150, height: 180)
+                                        .padding(.horizontal, 12)
+                                        .padding(.bottom, 30)
                                     }
                                 }
                                 
@@ -93,39 +161,66 @@ struct SongListView: View {
                                     ForEach(0..<4, id: \.self) { index in
                                         ZStack{
                                             RoundedRectangle(cornerRadius: 20)
-                                                .frame(width: 120, height: 150)
-                                                .foregroundColor(Color("Navy"))
+                                                .frame(width: 150, height: 180)
+                                                .foregroundColor(Color("Cyan"))
                                                 .padding(.top, 50)
                                             
                                             Text("Item \(index + 5)")
+                                            
+                                            VStack{
+                                                Spacer()
+                                                    .frame(height: 160)
+                                                
+                                                ZStack{
+                                                    RoundedRectangle(cornerRadius: 10)
+                                                        .frame(width: 120, height: 35)
+                                                        .foregroundColor(Color("Navy"))
+                                                    
+                                                    HStack{
+                                                        VStack{
+                                                            Text("Song Title")
+                                                                .font(.footnote)
+                                                                .bold()
+                                                            
+                                                            HStack{
+                                                                Text("Artist")
+                                                                    .font(.footnote)
+                                                                
+                                                                Spacer()
+                                                                    .frame(width: 30)
+                                                            }
+                                                        }
+                                                        
+                                                        Spacer()
+                                                            .frame(width: 40)
+                                                    }
+                                                    .foregroundColor(Color("White"))
+                                                    
+                                                    HStack{
+                                                        Spacer()
+                                                            .frame(width: 80)
+                                                        ZStack{
+                                                            Circle()
+                                                            
+                                                            Image(systemName: "arrow.right")
+                                                                .foregroundColor(Color("Navy"))
+                                                        }
+                                                        .frame(width: 25)
+                                                    }
+                                                    .foregroundColor(Color("White"))
+                                                }
+                                                .frame(width: 120, height: 35)
+                                            }
                                         }
-                                        .padding(.horizontal, 30)
+                                        .frame(width: 150, height: 180)
+                                        .padding(.horizontal, 12)
+                                        .padding(.bottom, 30)
                                     }
                                 }
                             }
                         }
                     }
-                    
-                    
                 }
-            }
-            HStack {
-                VStack{
-                    NavigationLink(destination: MainPageView(NamaUser: "Osama").navigationBarHidden(true)) {
-                        ZStack{
-                            Rectangle()
-                                .frame(width: 40, height: 40)
-                                .background(Color("Navy"))
-                                .opacity(1.0)
-                                .roundedCorner(10, corners: .allCorners)
-                            Image(systemName: "arrow.uturn.backward")
-                                .foregroundColor(.white).bold()
-                        }
-                    }
-                    .padding(.init(top: 10, leading: 60, bottom: 10, trailing: 10))
-                    Spacer()
-                }
-                Spacer()
             }
         }
     }
